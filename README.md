@@ -42,11 +42,11 @@ When JavaScript looks for a property that doesn't exist in a particular object (
 
 Let's start by creating a new object:
 ```javascript
-var shirt = {size:6, color: "red", gender: "mens", pattern: "plaid" };
+let shirt = {size:6, color: "red", gender: "mens", pattern: "plaid" };
 ```
 Now let's build a new object that uses the object we just created (ie shirt) as a prototype: 
 ``` javascript
-var magicShirt = Object.create ( shirt ); // whatever we pass in the parenthese will serve as  the prototype for the new object.
+let magicShirt = Object.create ( shirt ); // whatever we pass in the parenthese will serve as  the prototype for the new object.
 ```
 
 If we logged out magicShirt we'd get:
