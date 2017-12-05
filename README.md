@@ -1,4 +1,4 @@
-# Prototypes and Inheritance
+# Classes
 
 ## Learning objectives
 
