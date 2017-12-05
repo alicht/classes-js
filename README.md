@@ -37,20 +37,58 @@ car -> vehicle -> machine
 ```
 When JavaScript looks for a property that doesn't exist in a particular object (ie "car"), it will attempt to look for that property in each object on the prototype chain (ie first in vehicle, then in machine). It will walk along the chain until it finds the attribute or return undefined if it can't be found.
 
-### Let's explore some examples
+## Let's take a look at Prototypes and how to construct them (ie Pre-ES6)
+### Simple way to create objects via their prototype
 
-Let's also review constructor functions proper.
+Let's start by creating a new object:
+```javascript
+var shirt = {size:6, color: "red", gender: "mens", pattern: "plaid" };
+```
+Now let's build a new object that uses the object we just created (ie shirt) as a prototype: 
+``` javascript
+var magicShirt = Object.create ( shirt ); // whatever we pass in the parenthese will serve as  the prototype for the new object.
+```
+
+If we logged out magicShirt we'd get:
+``` javascript
+console.log(magicShirt); // Object{size: 6, color: "red", gender: "mens", pattern: "plaid"}
+```
+magicShirt's properties are **exactly** the same as shirt because it **literally** used shirt and thus inherited all of shirt's properties.
+
+#### Why is this?
+
+An Object inherits from its parent Object, ie its prototype. Each time we create a new Object, that Object automatically has access to all of the properties that were defined in its parent Object. In our shirt example, this means that every single time we make an instance of a new shirt, it has access to all of the properties defined in the original object we created.
+
+### A more efficient way to create new objects (via use of its prototype) is by using Constructor functions.
+Constructor function- a way to create an object's baseline blueprint that can be used multiple times without having to redefine the object every time to meet each particular instance's needs. 
+
+Let's build a Constructor function- namely, a function that will allow us to set up inheritance while also assigning specific property values. 
+
+We'll start by creating a shirt Object again:
+ 
+``` javascript
+function Shirt(shirtSize, shirtColor, shirtGender, constructionStyle){
+  this.size = shirtSize; 
+  this.color = shirtColor;
+  this.gender = shirtGender;
+  this.construction = constructionStyle;
+}
+```
  
 
 ## ES6 introduces new gamechanging syntax
 
 Prior to ES6, the common way to build new objects in JavaScript was by using Constructor functions. However Function Constructors can be quite confusing to understand and to help alleviate this, ES6 introduced the ```class``` keyword. 
 
-Classes in ES6 are honestly just syntactic sugar- they don't add any additional functionality to what we already had in the language (ie constructors), and are just a simpler syntax for building the same objects as we had before.
+Classes in ES6 are honestly just syntactic sugar- they don't add any additional functionality to what we already had in the language (ie constructors)- they're just a simpler syntax for building the same objects as we had before.
 
 ## Implementing JavaScript's new "class" keyword 
 
-Let's take a look at what a constructor looks like when we use class:
+# Pokemon will help us understand a deeper meaning to classes
+
+Let's take a look at what a constructor looks like when we use class. 
+
+Let's create a Pikachu class:
 
 ``` javascript
 class Pikachu {
@@ -66,7 +104,7 @@ class Pikachu {
   }
 }
 ``` 
-and let's also create a Snorlax
+and let's also create a Snorlax class:
 
 ``` javascript
 class Snorlax {
@@ -86,16 +124,14 @@ class Snorlax {
 
 We see we have two classes: Pikachu and Snorlax. They have some things in common: ```number```, ```type```, ```fastAttack``` and ```chargeAttack```. But they also have differences- Pikachu has a ```hiddenPower``` attribute and a ```walking``` function, whereas Snorlax has a ```weight``` attribute and an ```eats``` function.  
 
-## Lab- refactor functional code into classes
-
-# Pokemon will help us understand a deeper meaning to classes
-
 
 #### This is fine except...
 
-What if we wanted to create a number of other classes of Pokemon- like Gyarados, Dragonite, Farfetch'd, etc.- all of whom share some of the aforementioned properties but also have their own unique methods or attributes? 
+What if we wanted to create a number of other classes of Pokemon- like Gyarados, Dragonite, Farfetch'd, Mewtwo etc- all of whom share some of the aforementioned properties but also have their own unique methods or attributes? 
 
 How could we refactor this so that we don't have to keep writing out shared class properties and methods? 
+
+![Alt Text](https://media.giphy.com/media/3fZ8SLJCjJCDK/giphy.gif)
 
 A: Create a base class will abstract this: 
 ``` javascript
