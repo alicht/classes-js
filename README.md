@@ -94,7 +94,7 @@ Let's create a Pikachu class:
 class Pikachu {
   constructor(number, type, fastAttack, chargeAttack, hiddenPower){
     this.number = number;
-    this.type = type;
+    this.typeOfPokemon = typeOfPokemon;
     this.fastAttack = fastAttack;
     this.chargeAttack = chargeAttack;
     this.hiddenPower = hiddenPower;
@@ -110,7 +110,7 @@ and let's also create a Snorlax class:
 class Snorlax {
   constructor(number, type, fastAttack, chargeAttack, weight){
     this.number = number;
-    this.type = type;
+    this.typeOfPokemon = typeOfPokemon;
     this.fastAttack = fastAttack;
     this.chargeAttack = chargeAttack;
     this.weight = weight;
