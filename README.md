@@ -79,7 +79,7 @@ class Snorlax {
 ```
 
 
-We see we have two classes: Pikachu and Snorlax. They have some things in common: number, type, fastAttack and chargeAttack. But they also have differences- Pikachu has a hiddenPower attribute and a walking function, whereas Snorlax has a weight attribute and an eats function.  
+We see we have two classes: Pikachu and Snorlax. They have some things in common: ```number```, ```type```, ```fastAttack``` and ```chargeAttack```. But they also have differences- Pikachu has a ```hiddenPower``` attribute and a ```walking``` function, whereas Snorlax has a ```weight``` attribute and an ```eats``` function.  
 
 ## Lab- refactor functional code into classes
 
