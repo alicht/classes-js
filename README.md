@@ -207,6 +207,8 @@ The super function calls the constructor of the parent class. In the above examp
 
 In order to give an instance of a child class context (i.e. to be able to use this), we must call super.
 
+## Lab
+
 
 # Review
 What are Prototypes and why are they useful?
