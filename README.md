@@ -3,7 +3,7 @@
 ## Learning objectives
 
 * Explain what Prototypes are and demonstrate why they're an essential JavaScript feature
-* ES6's major syntax change, and the new method of creating Constructors  
+* ES6's major syntax change, ie... introducing classes! 
 * Use the ```new``` keyword to create new objects with shared properties
 * Create a class that inherits from another using ```extends``` and ```super``` keywords
 
