@@ -94,13 +94,13 @@ Let's create a Pikachu class:
 class Pikachu {
   constructor(number, type, fastAttack, chargeAttack, hiddenPower){
     this.number = number;
-    this.typeOfPokemon = typeOfPokemon;
+    this.type = type;
     this.fastAttack = fastAttack;
     this.chargeAttack = chargeAttack;
     this.hiddenPower = hiddenPower;
   }
   walks(){
-    return `I'll follow you wherever you go, and I can also do ${this.hiddenPower}!`
+    return `I will follow you wherever you go, and I can also do ${this.hiddenPower}!`
   }
 }
 ``` 
@@ -110,7 +110,7 @@ and let's also create a Snorlax class:
 class Snorlax {
   constructor(number, type, fastAttack, chargeAttack, weight){
     this.number = number;
-    this.typeOfPokemon = typeOfPokemon;
+    this.type = type;
     this.fastAttack = fastAttack;
     this.chargeAttack = chargeAttack;
     this.weight = weight;
