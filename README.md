@@ -190,10 +190,13 @@ console.log(yellowpikachu); // "this is not defined"
 ```
 That didn't work out the way we expected, and that's because we forgot something: 
 
-### Super
+## Super
+
+![superman_shield svg](https://user-images.githubusercontent.com/6153182/33620272-6b0cbece-d9b5-11e7-972a-1826672d946b.png)
+
 When creating an instance of a child class, we need to make sure it invokes the constructor of the parent (ie Pokemon) class.
 
-We do this by using the keyword "super":
+We do this by using the keyword `super`:
 ``` javascript
 class Pikachu extends Pokemon {
   constructor(number, type, fastAttack, chargeAttack, hiddenPower){
@@ -205,9 +208,9 @@ class Pikachu extends Pokemon {
   }
 }
 ```
-The super function calls the constructor of the parent class. In the above example, once super does what it needs to do, it then runs through the rest of Pikachu's constructor.
+The `super` function calls the constructor of the parent class. In the above example, once `super` does what it needs to do, it then runs through the rest of Pikachu's constructor.
 
-In order to give an instance of a child class context (i.e. to be able to use this), we must call super.
+In order to give an instance of a child class context (i.e. to be able to use this), we must call `super`.
 
 ## Lab
 
