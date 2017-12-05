@@ -150,6 +150,10 @@ Here we've defined an Pokemon class. It contains the general properties and meth
 
 #### Now let's take our parent Pokemon class and apply it to its "children":
 
+### Extends
+The keyword "extends" plays a key role here. Whatever class is to the left of the extends keyword should inherit the properties and methods that belongs to the class to the right of the keyword. 
+
+
 ![Alt Text](https://media.giphy.com/media/12r4pHjvAOv48o/giphy.gif)
 
 ``` javascript
@@ -174,10 +178,8 @@ class Snorlax extends Pokemon {
   }
 }
 ```
-### Extends
-The keyword "extends" plays a key role here. Whatever class is to the left of the extends keyword should inherit the properties and methods that belongs to the class to the right of the keyword. 
 
-Let's test out our parent class (ie Pokemon). 
+### Let's test out our parent class (ie Pokemon). 
 ``` javascript
 const magikarp = new Pokemon(129, "water", "splash", "struggle");
 ```
