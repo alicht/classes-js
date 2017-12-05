@@ -213,15 +213,11 @@ In order to give an instance of a child class context (i.e. to be able to use th
 
 
 # Review
-What are Prototypes and why are they useful?
-
-What is a `class`? What is `new`? How are they related?
-
-What does it mean to use "inheritance" when working with classes?
-
-How do we indicate that one `class` inherits from another?
-
-What does `super` mean?
+-  What are Prototypes and why are they useful?
+-  What is a `class`? What is `new`? How are they related?
+-  What does it mean to use "inheritance" when working with classes?
+-  How do we indicate that one `class` inherits from another?
+-  What does `super` mean?
 #
 
 
