@@ -8,6 +8,10 @@
 * Create a class that inherits from another using ```extends``` and ```super``` keywords
 
 ## What are prototypes?
+
+![Alt Text](https://media.giphy.com/media/3o6ZtjDNG2UXy7B3xK/giphy.gif)
+
+
 Prototypes are the underlying blueprint of an object, and form the baseline from which other instances of an object can be created. 
 * Every object in JavaScript has a special related object called the prototype. Through using Prototypes we can simply and efficiently share behavior and data between multiple objects.
 
@@ -77,6 +81,10 @@ class Snorlax {
 
 We see we have two classes: Pikachu and Snorlax. They have some things in common: number, type, fastAttack and chargeAttack. But they also have differences- Pikachu has a hiddenPower attribute and a walking function, whereas Snorlax has a weight attribute and an eats function.  
 
+# Lab- refactor functional code into classes
+
+
+
 #### This is fine except...
 
 What if we wanted to create a number of other classes of Pokemon- like Gyarados, Dragonite, Farfetch'd, etc.- all of whom share some of the aforementioned properties but also have their own unique methods or attributes? 
@@ -99,6 +107,9 @@ Here we've defined an Pokemon class. It contains the general properties and meth
 
 
 #### Now let's take our parent Pokemon class and apply it to its "children":
+
+![Alt Text](https://media.giphy.com/media/12r4pHjvAOv48o/giphy.gif)
+
 ``` javascript
 class Pikachu extends Pokemon {
   constructor(number, type, fastAttack, chargeAttack, hiddenPower){
@@ -108,8 +119,10 @@ class Pikachu extends Pokemon {
     return `I'll follow you wherever you go, and I can also do ${this.hiddenPower}!`
   }
 }
+``` 
 
-
+![Alt Text](https://media.giphy.com/media/TFrE5CQ0oNqvu/giphy.gif)
+``` javascript
 class Snorlax extends Pokemon {
   constructor(number, type, fastAttack, chargeAttack, weight){
     this.weight = weight;;
