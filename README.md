@@ -192,7 +192,7 @@ That didn't work out the way we expected, and that's because we forgot something
 
 ## Super
 
-![superman_shield svg](https://user-images.githubusercontent.com/6153182/33620272-6b0cbece-d9b5-11e7-972a-1826672d946b.png)
+![41no4h4txvl _sx355_](https://user-images.githubusercontent.com/6153182/33620324-8e72ecda-d9b5-11e7-9467-c8127e4851cd.jpg)
 
 When creating an instance of a child class, we need to make sure it invokes the constructor of the parent (ie Pokemon) class.
 
