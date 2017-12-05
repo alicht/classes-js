@@ -65,7 +65,10 @@ class Pikachu {
     return `I'll follow you wherever you go, and I can also do ${this.hiddenPower}!`
   }
 }
+``` 
+and let's also create a Snorlax
 
+``` javascript
 class Snorlax {
   constructor(number, type, fastAttack, chargeAttack, weight){
     this.number = number;
@@ -75,7 +78,7 @@ class Snorlax {
     this.weight = weight;
   }
   eats(){
-    return `Zzzzz! I am massively large and weigh ' + ${this.weight} +' pounds!`
+    return `Zzzzz! I am massively large and weigh ${this.weight} pounds!`
   }
 }
 ```
