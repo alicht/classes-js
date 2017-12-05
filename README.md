@@ -37,12 +37,12 @@ car -> vehicle -> machine
 ```
 When JavaScript looks for a property that doesn't exist in a particular object (ie "car"), it will attempt to look for that property in each object on the prototype chain (ie first in vehicle, then in machine). It will walk along the chain until it finds the attribute or return undefined if it can't be found.
 
-
-# Breaking News! 
+##### Let's explore some examples
+ 
 
 ## ES6 introduces new gamechanging syntax
 
-Prior to ES6, the common way to build new objects in JavaScript was by using Constructor functions. However Function Constructors can be quite confusing to understand and to help alleviate this, ES6 introduced the "class" keyword. 
+Prior to ES6, the common way to build new objects in JavaScript was by using Constructor functions. However Function Constructors can be quite confusing to understand and to help alleviate this, ES6 introduced the ```class``` keyword. 
 
 Classes in ES6 are honestly just syntactic sugar- they don't add any additional functionality to what we already had in the language (ie constructors), and are just a simpler syntax for building the same objects as we had before.
 
@@ -81,8 +81,9 @@ class Snorlax {
 
 We see we have two classes: Pikachu and Snorlax. They have some things in common: number, type, fastAttack and chargeAttack. But they also have differences- Pikachu has a hiddenPower attribute and a walking function, whereas Snorlax has a weight attribute and an eats function.  
 
-# Lab- refactor functional code into classes
+## Lab- refactor functional code into classes
 
+# Pokemon will help us understand a deeper meaning to classes
 
 
 #### This is fine except...
