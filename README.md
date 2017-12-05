@@ -37,7 +37,9 @@ car -> vehicle -> machine
 ```
 When JavaScript looks for a property that doesn't exist in a particular object (ie "car"), it will attempt to look for that property in each object on the prototype chain (ie first in vehicle, then in machine). It will walk along the chain until it finds the attribute or return undefined if it can't be found.
 
-##### Let's explore some examples
+### Let's explore some examples
+
+Let's also review constructor functions proper.
  
 
 ## ES6 introduces new gamechanging syntax
